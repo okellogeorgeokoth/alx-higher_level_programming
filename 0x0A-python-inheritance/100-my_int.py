@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""inherits from int"""
+"""
+Contains the class MyInt
+"""
 
 
 class MyInt(int):
-    """MyInt class inherits from int"""
-    def __eq__(self, other_int):
-        """inverted =="""
-        if self is not other_int:
-            return False
-        return True
+    """rebel version of an integer, perfect for opposite day!"""
+    def __new__(cls, *args, **kwargs):
+        """create a new instance of the class"""
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
-    def __ne__(self, other_int):
-        """inverted !="""
-        if self is other_int:
-            return False
-        return True
+    def __eq__(self, other):
+        """what was != is now =="""
+        return int(self) != other
+
+    def __ne__(self, other):
+        """what was == is now !="""
+        return int(self) == other

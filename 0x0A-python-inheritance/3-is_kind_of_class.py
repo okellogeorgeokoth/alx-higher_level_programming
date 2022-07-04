@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""check if object is instance of class or subclass"""
+"""
+Contains the is_kind_of_class function
+"""
 
 
 def is_kind_of_class(obj, a_class):
-    """return true is isinstance is true else false"""
-    x = isinstance(obj, a_class)
-    if x:
-        return True
-    return False
+    """True if obj is an instance or inherited from a_class, else False"""
+    return (isinstance(obj, a_class))
