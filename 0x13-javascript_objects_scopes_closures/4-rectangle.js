@@ -10,8 +10,8 @@ module.exports = class Rectangle {
   }
 
   print () {
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) {
+    for (const i = 0; i < this.height; i++) {
+      for (const j = 0; j < this.width; j++) {
         process.stdout.write('X');
       }
       process.stdout.write('\n');
@@ -19,7 +19,7 @@ module.exports = class Rectangle {
   }
 
   rotate () {
-    let temp = this.height;
+    const temp = this.height;
     this.height = this.width;
     this.width = temp;
   }
