@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // Class for rectangle with height and width parameters and various methods
 module.exports = class Rectangle {
-  constructor (w, h) {
+  const (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
