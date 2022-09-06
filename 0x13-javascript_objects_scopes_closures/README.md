@@ -1,4 +1,4 @@
-# 0x13. Javascript - Objects, Scopes, and Closures
+# 0x13. Javascript - Objects, Scopes, and Closures..
 
 ## Overview
 The objective of this project was to understand object-oriented Javascript and understanding how to create objects, how to use the word `this`, what `undefined` means, variable scope, closures, prototypes, and inheritance.
